@@ -23,7 +23,7 @@ class PaymentServiceSpringTest {
     @Autowired Clock clock;
 
     @Test
-    void convertedAmount() throws IOException {
+    void convertedAmount()  {
 
         // exRate : 1000
         Payment payment = paymentService.prepare(100L, "USD", BigDecimal.TEN);
